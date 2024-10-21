@@ -10,6 +10,7 @@ import PrescriptionScreen from './src/components/PrescriptionScreen';
 import LabMonitoringScreen from './src/components/LabMonitoringScreen';
 import NotificationsScreen from './src/components/NotificationsScreen';
 import PolypharmacyScreen from './src/components/PolypharmacyScreen';
+import LoginScreen from './src/components/LoginScreen';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Patients" component={PatientsScreen} />
         <Stack.Screen name="Patient Detail" component={PatientDetailScreen} />
         <Stack.Screen name="Drug Interaction" component={DrugInteractionScreen} />
